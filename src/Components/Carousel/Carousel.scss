@@ -1,0 +1,151 @@
+.carousel-container {
+    border-radius: 5px;
+    // background-color: var(--CARD_GRADIENT);
+    height: auto;
+  }
+  
+  .carousel-container .carousel-description,
+  .carousel-container .carousel-overlay {
+    display: none;
+  }
+  
+  .carousel-container .carousel-img img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .slidersads{
+    overflow: hidden;
+  }
+  .container{
+    min-height: 50vh;
+    width: 100%;
+    margin: 10px  10rem;
+    padding: 10px;
+    background-color: aqua;
+
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg,#030b18 12%,rgba(4,11,24,0));
+    display: block;
+    border-radius: 5px;
+
+
+
+  }
+  .imgd{
+    display: inline-block;
+  }
+  .containers{
+    background-color: red;
+    min-height: 50vh;
+    width: 100%;
+    margin: 10px  10rem;
+    padding: 10px;
+  }
+
+  .imgk{
+    background-color: red;
+    min-height: 50vh;
+    width:calc(100% - 50px);
+    margin: auto;
+    // margin: auto 10rem;
+  }
+
+
+
+.imgd   {
+  
+ 
+    height: 444px;
+    width:calc(100% - 30px);
+    margin: auto;
+}
+.masthead-item-container{
+  background-color: var(--BG_COLOR_L0);
+  // margin: 0 10px;
+  width:calc(100% - 30px) !important ;
+  border-radius: 5px;
+    overflow: hidden;
+// background-color: pink;
+width: 100%;
+height: inherit;
+color: white;
+position: relative;
+
+}
+
+.carousel-description{
+  position: absolute;
+    left: 1em;
+    top: 2em;
+    width: 40%;
+    padding: 4em;
+    display: block;
+    z-index: 1;
+
+
+    h2 {
+      font-size: 28px;
+    font-weight: 600;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    }
+    
+    h6{
+      font-size: 16px;
+      font-weight: 500;
+      color: gray;
+      padding-top: 10px;
+    }
+    p{
+      font-size: 16px;
+      overflow-wrap: break-word;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      line-height: 28px;
+      padding-top: 10px;
+    }
+}
+
+.carousel-overlay {
+  position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, #000 40%, rgba(4, 11, 24, 0));
+    display: block;
+    border-radius: 5px;
+
+}
+.img_container{
+
+text-align: end;
+ border-radius: 5px;
+ z-index: 1;
+
+  img{
+    z-index: 1;
+    display: inline;
+   
+    width: 720px;
+    height: 444px;
+    max-width: 100%;
+    border-radius: 5px;
+
+    vertical-align: middle;
+    border-style: none;
+  }
+}
