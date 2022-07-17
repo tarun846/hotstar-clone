@@ -48,13 +48,7 @@
     padding: 10px;
   }
 
-  .imgk{
-    background-color: red;
-    min-height: 50vh;
-    width:calc(100% - 50px);
-    margin: auto;
-    // margin: auto 10rem;
-  }
+
 
 
 
@@ -62,7 +56,7 @@
   
  
     height: 444px;
-    width:calc(100% - 30px);
+    width:calc(100% - 0px);
     margin: auto;
 }
 .masthead-item-container{
@@ -125,7 +119,7 @@ position: relative;
     height: 100%;
     width: 100%;
     left: 0;
-    background: linear-gradient(90deg, #000 40%, rgba(4, 11, 24, 0));
+    background: linear-gradient(90deg, #000 38%, rgba(4, 11, 24, 0));
     display: block;
     border-radius: 5px;
 

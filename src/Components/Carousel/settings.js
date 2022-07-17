@@ -1,4 +1,4 @@
-const settings = {
+export  const settings = {
     className: "position-relative this-carousel",
     dots: false,
     infinite: true,
