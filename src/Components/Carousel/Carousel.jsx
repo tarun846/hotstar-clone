@@ -7,28 +7,31 @@ import {settings} from './settings'
 import anatomy from '../../assets/images/anatomy.webp'
 import { useDispatch , useSelector  } from 'react-redux';
 import { fetchData } from '../../Container/CarouselSlice';
-function Carousel() {
+import { allTrending } from '../../api/api';
+import { v4 as uuid }  from 'uuid'
+
+function Carousel({value}) {
  
   const state  = useSelector( state => state.carousel )
-   console.log(state); 
+
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(fetchData())
+    dispatch(fetchData(value))
  }, [dispatch])
 
   const data =   state?.entities?.results?.slice(0, 6) ;
-  console.log(data);
+
   
     const carousel = data?.map( (e) => {
-      console.log(e.genres);
-      return (
-        <div className="overlay_container"> 
+  
+    return (
+        <div className="overlay_container" key={uuid} > 
 <div className="imgd">
 
 <div className="masthead-item-container"  >
 
 <div className="carousel-description">
-          <h2>{e.title}</h2>
+          <h2>{e.title || e.name }</h2>
           <p>{e.overview}</p>
         </div>
 

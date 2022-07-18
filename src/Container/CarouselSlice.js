@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
-import { movieMarvelEndpoint } from '../api/api'
+import {  allTrending  } from '../api/api'
 
 const initialState = {
     entities: [],
@@ -8,9 +8,10 @@ const initialState = {
     error : null,
 }
 
-export  const fetchData = createAsyncThunk('data/fetchdata' , async () => {
-try {
-    const response = await axios.get(movieMarvelEndpoint)
+export  const fetchData = createAsyncThunk('data/fetchdata' , async (value = allTrending ) => {
+
+    try {
+    const response = await axios.get(value)
     return response.data
 } catch (error) {
     return error.message

@@ -1,8 +1,12 @@
 import React from 'react'
-
+import { tvOriginalDisneyEndpoint } from '../api/api'
+import Carousel from '../Components/Carousel/Carousel'
 function Tv() {
+ 
   return (
-    <div>Tv</div>
+    <>
+      <Carousel value={tvOriginalDisneyEndpoint} />
+    </>
   )
 }
 

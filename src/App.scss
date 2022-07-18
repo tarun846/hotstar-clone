@@ -14,6 +14,7 @@
   --TEXT_LINK_COLOR: #1f80e0;
   --TEXT_BTN_COLOR: #1f80e0;
   --BG_COLOR_L0: #0c111b;
+  --CARD_GRADIENT: hsl(216, 77%, 5%);
 }
 /*
   2. Remove default margin
@@ -66,4 +67,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 li{
   list-style: none;
+}
+a{
+  text-decoration: none;
+   color: inherit;
+   font-family: inherit;
 }

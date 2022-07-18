@@ -7,8 +7,15 @@ import Movie from './pages/Movie';
 import Home from './pages/Home';
 import Notfound from './pages/Notfound';
 import Navbar from './Components/Navbar/Navbar';
+import { useDispatch } from 'react-redux';
+import { getMovieAndTv } from './Container/movieandtvslice';
 
 function App() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+   dispatch(getMovieAndTv())
+  }, [])
+  
 
   return (
     <>
@@ -19,8 +26,8 @@ function App() {
     <Navbar/>
              <Routes>
             <Route path = '/' element = {<Home/>}  />
-            <Route path = '/tv/:Id'  element = {<Tv/>}/>
-            <Route path = '/movie/:Id'  element = {<Movie/>}/>
+            <Route path = '/tv'  element = {<Tv/>}/>
+            <Route path = '/movie'  element = {<Movie/>}/>
             <Route path = '*'  element = {<Notfound/>}  /> 
             </Routes>
 

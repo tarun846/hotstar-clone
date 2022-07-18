@@ -61,11 +61,10 @@
 }
 .masthead-item-container{
   background-color: var(--BG_COLOR_L0);
-  // margin: 0 10px;
+  margin: 0 10px;
   width:calc(100% - 30px) !important ;
   border-radius: 5px;
     overflow: hidden;
-// background-color: pink;
 width: 100%;
 height: inherit;
 color: white;
@@ -84,10 +83,12 @@ position: relative;
 
 
     h2 {
-      font-size: 28px;
-    font-weight: 600;
+      // font-size: 28px;
+      font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+    
+      font-weight: 600;
     -webkit-line-clamp: 2;
-    text-overflow: ellipsis;
+    // text-overflow: ellipsis;
     overflow: hidden;
     text-align: left;
     display: -webkit-box;
@@ -96,7 +97,8 @@ position: relative;
     }
     
     h6{
-      font-size: 16px;
+      // font-size: 16px;
+      font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
       font-weight: 500;
       color: gray;
       padding-top: 10px;
@@ -114,32 +116,35 @@ position: relative;
 }
 
 .carousel-overlay {
-  position: absolute;
+
     top: 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background: linear-gradient(90deg, #000 38%, rgba(4, 11, 24, 0));
-    display: block;
-    border-radius: 5px;
+    right: 590px;
+    width: 200px;
+    height: inherit;
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right , var(--CARD_GRADIENT) , rgba(0,0,0,0.1));
+    
 
 }
 .img_container{
 
 text-align: end;
  border-radius: 5px;
- z-index: 1;
+ max-width: none;
 
   img{
-    z-index: 1;
+    
     display: inline;
-   
-    width: 720px;
-    height: 444px;
-    max-width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 790px;
+    display: flex;
+    float: right;
+    min-height: 444px;
     border-radius: 5px;
-
-    vertical-align: middle;
+    // vertical-align: middle;
     border-style: none;
+    
   }
 }

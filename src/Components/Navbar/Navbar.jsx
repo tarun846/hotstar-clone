@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../assets/images/disney-hotstar-logo-dark.svg'
 import kids  from '../../assets/images/kids.svg'
 import './Navbar.scss'
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
@@ -10,15 +11,19 @@ function Navbar() {
 
 <div className="first_container">
 <div className="logo">
-            <img src= {logo} alt= "logo" />
+<Link to = '/' >   
+
+<img src= {logo} alt= "logo" />
+   </Link>
+           
           </div>
 
 
           <div className="links">
       
       <ul>
-            <li>  TV  </li>
-            <li> Movies </li>
+            <li>  <Link to = '/tv' >   TV   </Link>  </li>
+            <li> <Link to = '/movie' >   Movie   </Link> </li>
             <li> Sports  </li>
             <li> Disney+ </li>
             <li>  <img src= {kids} alt="" />   </li>

@@ -11,7 +11,7 @@ function Home() {
   
   return (
     <div>
-      <Carousel/>
+      <Carousel value={allTrending} />
     </div>
   )
 }
